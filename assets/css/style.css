@@ -1,0 +1,70 @@
+body {
+    font-family: "American Typewriter", serif;
+    background: darkolivegreen;
+    color: tan;
+    text-align: center;
+}
+
+.game {
+    width: 690px;
+}
+
+.title {
+
+    padding: 1em;
+    font-size: 2em;
+    text-align: center;
+    border: 0.05em solid tan;
+    border-radius: 0.5em;
+}
+
+.description {
+    border: 0.05em solid tan;
+    border-radius: 0.5em;
+    padding: 1em;
+}
+.container1 {
+    width: 100%;
+}
+
+.computer-number-div {
+    border: 0.05em solid tan;
+    border-radius: 0.5em;
+    margin: 0;
+    padding: 2em;
+    width: 61%;
+    float: left;
+    clear: none;
+}
+
+.wins-losses-div {
+    border: 0.05em solid tan;
+    border-radius: 0.5em;
+    padding: 1em;
+    width: 24%;
+    float: right;
+    clear: none;
+}
+
+.container2 {
+    border: 0.05em solid tan;
+    border-radius: 0.5em;
+    width: 100%;
+    float: left;
+}
+
+.crystal-1, .crystal-2, .crystal-3, .crystal-4 {
+    float: left;
+    margin: 3.3em;
+}
+
+.container3 {
+    border: 0.05em solid tan;
+    border-radius: 0.5em;
+    width: 100%;
+    float: left;
+}
+
+.total-score-div {
+    padding: 1em;
+}

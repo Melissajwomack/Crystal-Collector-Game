@@ -82,6 +82,23 @@ $(document).ready(function () {
         };
     };
 
+    //Cursor change to hand while hovering over crystals
+    $(".crystal-1").hover(function () {
+        $(this).css("cursor", "hand");
+    });
+
+    $(".crystal-2").hover(function () {
+        $(this).css("cursor", "hand");
+    });
+
+    $(".crystal-3").hover(function () {
+        $(this).css("cursor", "hand");
+    });
+
+    $(".crystal-4").hover(function () {
+        $(this).css("cursor", "hand");
+    });
+
     //On-click events for each crystal 
     $(".crystal-1").on("click", function () {
         userNumber = userNumber + crystalOneValue;
