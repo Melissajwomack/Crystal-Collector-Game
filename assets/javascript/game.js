@@ -1,21 +1,21 @@
 $(document).ready(function () {
     //Variables
-    //Generate computer number (19-120)
-    //Generate values for each crystal (1-12)
+    //Generates computer number (19-120)
+    //Generates values for each crystal (1-12)
 
     var computerNumber = parseInt([Math.floor(Math.random() * (120 - 19 + 1) + 19)]);
 
     var crystalOneValue = parseInt([Math.floor(Math.random() * (12) + 1)]);
-    console.log("Crystal 1: " + crystalOneValue);
+    console.log("Blue Crystal: " + crystalOneValue);
 
     var crystalTwoValue = parseInt([Math.floor(Math.random() * (12) + 1)]);
-    console.log("Crystal 2: " + crystalTwoValue);
+    console.log("Green Crystal: " + crystalTwoValue);
 
     var crystalThreeValue = parseInt([Math.floor(Math.random() * (12) + 1)]);
-    console.log("Crsytal 3: " + crystalThreeValue);
+    console.log("Purple Crsytal: " + crystalThreeValue);
 
     var crystalFourValue = parseInt([Math.floor(Math.random() * (12) + 1)]);
-    console.log("Crystal 4: " + crystalFourValue);
+    console.log("Yellow Crystal: " + crystalFourValue);
 
     var userNumber = 0;
 
@@ -36,10 +36,10 @@ $(document).ready(function () {
         console.log("Wins: " + wins);
 
         $(".losses").text(losses);
-        console.log("losses: " + losses);
+        console.log("Losses: " + losses);
     };
 
-    //Updated Html at the start of the game
+    //Updates Html at the start of the game
     updateHtml();
 
     //Reset game function
@@ -47,16 +47,16 @@ $(document).ready(function () {
         computerNumber = parseInt([Math.floor(Math.random() * (120 - 19 + 1) + 19)]);
 
         crystalOneValue = parseInt([Math.floor(Math.random() * (12) + 1)]);
-        console.log("Crystal 1: " + crystalOneValue);
+        console.log("Blue Crystal: " + crystalOneValue);
 
         crystalTwoValue = parseInt([Math.floor(Math.random() * (12) + 1)]);
-        console.log("Crystal 2: " + crystalTwoValue);
+        console.log("Green Crystal: " + crystalTwoValue);
 
         crystalThreeValue = parseInt([Math.floor(Math.random() * (12) + 1)]);
-        console.log("Crsytal 3: " + crystalThreeValue);
+        console.log("Purple Crystal: " + crystalThreeValue);
 
         crystalFourValue = parseInt([Math.floor(Math.random() * (12) + 1)]);
-        console.log("Crystal 4: " + crystalFourValue);
+        console.log("Yellow Crystal: " + crystalFourValue);
 
         userNumber = 0;
     };
@@ -76,26 +76,20 @@ $(document).ready(function () {
             losses++;
             $(".you-win-lose").text("You lose!");
             console.log("LOSS");
-            console.log("losses: " + losses);
+            console.log("Losses: " + losses);
             reset();
             updateHtml();
         };
     };
 
+    //Function to update total score
+    function userScore() {
+        console.log("Total score: " + userNumber);
+        $(".total-score").text(userNumber);
+    }
+
     //Cursor change to hand while hovering over crystals
-    $(".crystal-1").hover(function () {
-        $(this).css("cursor", "hand");
-    });
-
-    $(".crystal-2").hover(function () {
-        $(this).css("cursor", "hand");
-    });
-
-    $(".crystal-3").hover(function () {
-        $(this).css("cursor", "hand");
-    });
-
-    $(".crystal-4").hover(function () {
+    $(".crystal-1, .crystal-2, .crystal-3, .crystal-4").hover(function () {
         $(this).css("cursor", "hand");
     });
 
@@ -103,33 +97,30 @@ $(document).ready(function () {
     $(".crystal-1").on("click", function () {
         userNumber = userNumber + crystalOneValue;
         $(".you-win-lose").text("");
+        userScore();
         winOrLose();
-        console.log("Total score: " + userNumber);
-        $(".total-score").text(userNumber);
+
     });
 
     $(".crystal-2").on("click", function () {
         userNumber = userNumber + crystalTwoValue;
         $(".you-win-lose").text("");
+        userScore();
         winOrLose();
-        console.log("Total score: " + userNumber);
-        $(".total-score").text(userNumber);
     });
 
     $(".crystal-3").on("click", function () {
         userNumber = userNumber + crystalThreeValue;
         $(".you-win-lose").text("");
+        userScore();
         winOrLose();
-        console.log("Total score: " + userNumber);
-        $(".total-score").text(userNumber);
     });
 
     $(".crystal-4").on("click", function () {
         userNumber = userNumber + crystalFourValue;
         $(".you-win-lose").text("");
+        userScore();
         winOrLose();
-        console.log("Total score: " + userNumber);
-        $(".total-score").text(userNumber);
     });
 
 

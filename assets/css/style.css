@@ -1,6 +1,6 @@
 body {
     font-family: "American Typewriter", serif;
-    background: darkolivegreen;
+    background: white;
     color: tan;
     text-align: center;
 }
@@ -10,43 +10,51 @@ body {
 }
 
 .title {
-
+    background: darkolivegreen;
     padding: 1em;
-    font-size: 2em;
+    font-size: 3em;
     text-align: center;
     border: 0.05em solid tan;
     border-radius: 0.5em;
 }
 
 .description {
+    background: darkolivegreen;
     border: 0.05em solid tan;
     border-radius: 0.5em;
     padding: 1em;
-}
-.container1 {
-    width: 100%;
+    font-weight: lighter;
+    font-size: 1.5em;
+    line-height: 1.5em;
 }
 
 .computer-number-div {
+    background: darkolivegreen;
     border: 0.05em solid tan;
     border-radius: 0.5em;
     margin: 0;
-    padding: 2em;
-    width: 61%;
+    padding: 1.7em;
+    width: 55%;
     float: left;
     clear: none;
+    font-weight: lighter;
+    font-size: 2em;
 }
 
 .wins-losses-div {
+    background: darkolivegreen;
     border: 0.05em solid tan;
     border-radius: 0.5em;
-    padding: 1em;
-    width: 24%;
+    padding: 0.7em;
+    width: 21.5%;
     float: right;
     clear: none;
+    font-weight: lighter;
+    font-size: 2em;
 }
 
 .container2 {
+    background: darkolivegreen;
     border: 0.05em solid tan;
     border-radius: 0.5em;
     width: 100%;
@@ -55,10 +63,11 @@ body {
 
 .crystal-1, .crystal-2, .crystal-3, .crystal-4 {
     float: left;
-    margin: 3.3em;
+    margin: 3em;
 }
 
 .container3 {
+    background: darkolivegreen;
     border: 0.05em solid tan;
     border-radius: 0.5em;
     width: 100%;
@@ -67,4 +76,16 @@ body {
 
 .total-score-div {
     padding: 1em;
+    font-weight: lighter;
+    font-size: 2em;
+}
+
+.computer-number, .you-win-lose, .wins, .losses, .total-score {
+    color: darkgoldenrod;
+    font-weight: bolder;
+}
+
+img {
+    border: 0.3em solid tan;
+    border-radius: 10em;
 }
