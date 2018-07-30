@@ -88,7 +88,7 @@ $(document).ready(function () {
         $(".total-score").text(userNumber);
     }
 
-    //Cursor change to hand while hovering over crystals
+    //Cursor changes to hand while hovering over crystals
     $(".crystal-1, .crystal-2, .crystal-3, .crystal-4").hover(function () {
         $(this).css("cursor", "hand");
     });
@@ -99,7 +99,6 @@ $(document).ready(function () {
         $(".you-win-lose").text("");
         userScore();
         winOrLose();
-
     });
 
     $(".crystal-2").on("click", function () {
